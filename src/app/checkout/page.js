@@ -67,7 +67,7 @@ export default function CheckoutPage() {
     island: 6000,
     ikorodu: 6000,
     Ajah: 7000,
-    none : 0
+    none: 0,
   };
 
   const deliveryFee = deliveryFees[form.deliveryLocation] || 0;
@@ -381,7 +381,8 @@ export default function CheckoutPage() {
                   component="legend"
                   className="!text-sm !mb-4 !font-bold md:!text-base !text-black"
                 >
-                  Select your delivery location (Select if you're shopping products only and not tickets.)
+                  Select your delivery location (Select if you're shopping
+                  products only and not tickets.)
                 </FormLabel>
                 <RadioGroup
                   name="deliveryLocation"
@@ -561,7 +562,7 @@ export default function CheckoutPage() {
             </Box>
 
             <Box className="space-y-2">
-              <Typography className="!mb-4 !text-sm ">Promo code</Typography>
+              <Typography className="!mb-4 !text-sm ">Coupon code</Typography>
               <Box className="flex gap-2 items-center">
                 <TextField
                   fullWidth
@@ -569,7 +570,7 @@ export default function CheckoutPage() {
                   value={form.promo}
                   onChange={handleChange}
                   size="small"
-                  placeholder="Enter promo code"
+                  placeholder="Enter coupon code"
                   inputProps={{ style: { fontSize: "1rem" } }}
                 />
                 <Button
@@ -581,7 +582,7 @@ export default function CheckoutPage() {
                   {isApplying ? "Checking..." : "Apply"}
                 </Button>
               </Box>
-              {promoTried && (
+              {promoTried && !isApplying && (
                 <Chip
                   label={
                     couponApplied

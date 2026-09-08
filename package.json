@@ -16,6 +16,7 @@
     "@reduxjs/toolkit": "^2.8.2",
     "@sanity/image-url": "^1.1.0",
     "@sanity/vision": "^3.88.2",
+    "crypto": "^1.0.1",
     "framer-motion": "^12.18.1",
     "next": "^15.5.9",
     "next-sanity": "^9.12.3",
