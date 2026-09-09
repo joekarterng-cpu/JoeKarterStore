@@ -580,7 +580,7 @@ export default function CheckoutPage() {
                   className="!bg-black !text-white hover:!scale-105 !capitalize !transition !ease-in-out duration-300"
                 >
                   {isApplying ? "Checking..." : "Apply"}
-                </Button>
+                </Button> 
               </Box>
               {promoTried && !isApplying && (
                 <Chip

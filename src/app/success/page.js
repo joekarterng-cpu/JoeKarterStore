@@ -30,7 +30,7 @@ export default function SuccessPage() {
           </Typography>
 
           <Typography className="!text-sm md:!text-base text-gray-600 !mb-6">
-            Thank you for your purchase!. We’ve received your order and will begin processing it shortly.
+            Thank you for your purchase!. We’ve received your order and will begin processing it shortly!.
           </Typography>
 
           <Button
