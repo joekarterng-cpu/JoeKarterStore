@@ -17,7 +17,7 @@ export default function SuccessPage() {
         className="w-full max-w-md"
       >
         <Paper elevation={3} className="p-8 rounded-2xl text-center">
-          <Box className="flex justify-center !mb-4 text-green-600 text-5xl">
+          <Box className="flex justify-center !mb-4  text-green-600 text-5xl">
             <AiOutlineCheckCircle />
           </Box>
 
