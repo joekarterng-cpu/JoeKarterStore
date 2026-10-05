@@ -6,17 +6,18 @@ import EventDetails from "../components/EventDetails";
 // --- Fetch Event from Sanity (server side) ---
 async function getEvent() {
   const query = `*[_type == "eventTicket"][0]{
-    title,
-    date,
-    description,
-    location,
-    "bannerImageUrl": bannerImage.asset->url,
-    tickets[] {
-      name,
-      price,
-      checkoutUrl
-    }
-  }`;
+  _id,
+  title,
+  date,
+  description,
+  location,
+  "bannerImageUrl": bannerImage.asset->url,
+  tickets[] {
+    name,
+    price,
+    checkoutUrl
+  }
+}`;
   return await client.fetch(query);
 }
 

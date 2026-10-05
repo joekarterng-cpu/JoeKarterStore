@@ -37,6 +37,12 @@ export default function EventDetails({ event }) {
         quantity: 1,
         size: null,
         color: null,
+    
+        // Ticket information
+        isTicket: true,
+        eventTitle: event.title,
+        eventId: event._id,
+        ticketType: selectedTicket.name,
       })
     );
 

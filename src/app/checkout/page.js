@@ -226,6 +226,21 @@ export default function CheckoutPage() {
             variable_name: "mobile_number",
             value: form.phone,
           },
+          {
+            display_name: "Order Items",
+            variable_name: "order_items",
+            value: JSON.stringify(
+              cart.map((item) => ({
+                title: item.title,
+                quantity: item.quantity,
+                price: item.price,
+                isTicket: item.isTicket || false,
+                eventId: item.eventId || null,
+                eventTitle: item.eventTitle || null,
+                ticketType: item.ticketType || null,
+              }))
+            ),
+          },
         ],
       },
       callback: function (response) {
